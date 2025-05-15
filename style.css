@@ -1,0 +1,164 @@
+* {
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(235, 201, 207);
+}
+
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rosybrown;
+  padding: 10px;
+}
+header div {
+  color: rgb(236, 203, 208);
+}
+
+section {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rosybrown;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+main {
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.content .photos {
+  background-color: rosybrown;
+  color: rgb(236, 203, 208);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.content .summary {
+  background-color: rosybrown;
+  color: rgb(236, 203, 208);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.content .summary button {
+  background-color: transparent;
+  border: 0;
+  align-items: flex-start;
+  justify-content: start;
+  transition: 0.3s;
+}
+.content .summary button:hover {
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+#more {
+  display: none;
+}
+
+#bTTBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(179, 14, 201);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#bTTBtn:hover {
+  background-color: #441049;
+}
+
+.container {
+  position: relative;
+}
+
+.Slides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.next,
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

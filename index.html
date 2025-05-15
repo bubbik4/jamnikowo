@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jamniczkowo</title>
+</head>
+<body>
+    <header class="flex">
+       <div>
+        <p>/</p>
+       </div>
+        <div>
+            <p>Jamniczkowo</p>
+       </div>
+        <div>
+        <p>\</p>
+       </div>
+    </header>
+
+    <section class="flex">
+            <a>/</a>
+            <a>/</a>
+            <a>/</a>
+    </section>
+
+    <main>
+        <div class="content flex col">
+            <div class="summary flex col">
+                <h2>Podsumowanie</h2>
+                <label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras urna urna, congue vitae metus in, porttitor consequat purus. Nam nec dolor facilisis, blandit<span id="dots">...</span><span id="more">lectus ut, consectetur justo. Quisque maximus arcu massa, id elementum quam semper ut. In et nulla ut turpis sollicitudin sagittis ut vitae metus. Vestibulum ut egestas nunc. Duis nec lacus eget sem fermentum maximus eget fringilla nibh. Nam eget euismod eros, et placerat mi. Duis ligula turpis, consequat eget tempor vitae, faucibus eget elit. Curabitur hendrerit congue neque ullamcorper tempor. Proin tincidunt magna convallis lacus elementum, in posuere odio viverra. Sed sed tortor mollis, congue lectus ut, vulputate odio. Integer vel ultrices orci, volutpat luctus dolor. Morbi tincidunt enim convallis scelerisque sollicitudin. Aliquam sagittis metus semper vulputate ultrices. Curabitur sed dui sodales odio volutpat lacinia sit amet vitae neque. Curabitur sodales efficitur diam in viverra. Fusce at enim tempor, mollis est in, laoreet nisl.</span></p>
+                <button onclick="showMode()" id="showBtn">Pokaż więcej</button>
+                </label>
+                <script src="js/showMore.js"></script>
+            </div>
+            <label>
+            <div class="container">
+                <div class="Slides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/jamnik1.jpeg" alt="Jamnik 1" width="100%">
+                </div>
+                <div class="Slides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/jamnik2.jpeg" alt="Jamnik 2" width="100%">
+                </div>
+                <div class="Slides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/jamnik3.jpeg" alt="Jamnik 3" width="100%">
+                </div>
+                <div class="Slides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/jamnik4.jpeg" alt="Jamnik 4" width="100%">
+                </div>
+                <div class="Slides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/jamnik5.jpeg" alt="Jamnik 5" width="100%">
+                </div>
+                <div class="Slides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/jamnik6.jpeg" alt="Jamnik 6" width="100%">
+                </div>
+                <a onclick="plusSlides(-1)" class="prev">&#10094;</a>
+                <a onclick="plusSlides(1)" class="next">&#10095;</a>
+                
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                
+                <div class="row">
+                    <div class="column">
+                        <img src="img/jamnik1.jpeg" alt="Jamnik 1" class="demo cursor" width="100%" onclick="currentSlide(1)">
+                    </div>
+
+                    <div class="column">
+                        <img src="img/jamnik2.jpeg" alt="Jamnik 2" class="demo cursor" width="100%" onclick="currentSlide(2)">
+                    </div>
+
+                    <div class="column">
+                        <img src="img/jamnik3.jpeg" alt="Jamnik 3" class="demo cursor" width="100%" onclick="currentSlide(3)">
+                    </div>
+
+                    <div class="column">
+                        <img src="img/jamnik4.jpeg" alt="Jamnik 4" class="demo cursor" width="100%" onclick="currentSlide(4)">
+                    </div>
+
+                    <div class="column">
+                        <img src="img/jamnik5.jpeg" alt="Jamnik 5" class="demo cursor" width="100%" onclick="currentSlide(5)">
+                    </div>
+
+                    <div class="column">
+                        <img src="img/jamnik6.jpeg" alt="Jamnik 6" class="demo cursor" width="100%" onclick="currentSlide(6)">
+                    </div>
+                    <script src="js/gallery.js"></script>
+                </div>
+            </div>
+            </label>
+        </div>
+    </main>
+    <button onclick="backToTop()" id="bTTBtn" title="Powrót na górę">^</button>
+    <script src="/js/backToTop.js"></script>
+</body>
+</html>
